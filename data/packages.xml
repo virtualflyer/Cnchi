@@ -71,7 +71,6 @@
                 <pkgname>numix-frost-themes</pkgname>
                 <pkgname>numix-icon-theme</pkgname>
                 <pkgname>numix-icon-theme-square</pkgname>
-                <pkgname lib="gtk">orca</pkgname>
                 <pkgname>pamac</pkgname>
                 <pkgname>pavucontrol</pkgname>
                 <pkgname>pulseaudio</pkgname>
@@ -523,11 +522,14 @@
 
     <!-- User desired features -->
     <features>
+		<feature name="a11y">
+			<pkgname>orca</pkgname>
+		</feature>
         <feature name="aur">
-        <pkgname>yaourt</pkgname>
-        <pkgname>cmake</pkgname>
-        <pkgname>git</pkgname>
-        <pkgname>bzr</pkgname>
+            <pkgname>yaourt</pkgname>
+            <pkgname>cmake</pkgname>
+            <pkgname>git</pkgname>
+            <pkgname>bzr</pkgname>
         </feature>
         <feature name="bluetooth">
             <pkgname>bluez</pkgname>
