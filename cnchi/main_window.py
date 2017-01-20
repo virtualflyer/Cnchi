@@ -68,7 +68,7 @@ def atk_set_image_description(widget, description):
     atk_widget = widget.get_accessible()
     if atk_widget is not None:
         atk_widget.set_image_description(description)
-
+        #atk_object_set_name
 
 class MainWindow(Gtk.ApplicationWindow):
     """ Cnchi main window """
@@ -173,11 +173,12 @@ class MainWindow(Gtk.ApplicationWindow):
         self.backwards_button.set_name('bk_btn')
         self.backwards_button.set_always_show_image(True)
 
-        # Needed by Orca
-        lbl = Gtk.Label.new_with_mnemonic(_("_Next") + " >")
-        self.forward_button.add(lbl)
-        #self.backwards_button.set_label("< " + _("_Back"))
 
+        # Needed by Orca
+        #lbl = Gtk.Label.new_with_mnemonic(_("_Next") + " >")
+        #self.forward_button.add(lbl)
+        #lbl = Gtk.Label.new_with_mnemonic("< " + _("_Back"))
+        #self.backwards_button.set_label(lbl)
 
 
         # Create a queue. Will be used to report pacman messages
