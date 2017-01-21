@@ -46,6 +46,8 @@ class Welcome(GtkBaseBox):
         data_dir = self.settings.get('data')
         welcome_dir = os.path.join(data_dir, "images", "welcome")
 
+        self.main_window = params['main_window']
+
         self.labels = {'welcome': self.ui.get_object("welcome_label"),
                        'tryit': self.ui.get_object("tryit_welcome_label"),
                        'installit': self.ui.get_object("installit_welcome_label"),
@@ -73,6 +75,10 @@ class Welcome(GtkBaseBox):
                 'width': 243,
                 'height': 174}}
 
+        # a11y
+        self.labels['tryit'].set_mnemonic_widget(self.buttons['tryit'])
+        self.labels['installit'].set_mnemonic_widget(self.buttons['graph'])
+
         for key in self.images:
             image = self.filenames[key]
             pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(
@@ -80,6 +86,7 @@ class Welcome(GtkBaseBox):
                 image['width'],
                 image['height'])
             self.images[key].set_from_pixbuf(pixbuf)
+
 
     def translate_ui(self):
         """ Translates all ui elements """
@@ -105,6 +112,7 @@ class Welcome(GtkBaseBox):
 
         txt = _("Welcome to Antergos!")
         self.header.set_subtitle(txt)
+
 
     def quit_cnchi(self):
         misc.remove_temp_files()
@@ -144,6 +152,12 @@ class Welcome(GtkBaseBox):
         self.translate_ui()
         self.show_all()
         self.forward_button.hide()
+
+        # a11y Set install option as default if ENTER is pressed
+        self.buttons['graph'].set_can_default(True)
+        self.main_window.set_default(self.buttons['graph'])
+
+
         if self.disable_tryit:
             self.buttons['tryit'].set_sensitive(False)
         if direction == "backwards":

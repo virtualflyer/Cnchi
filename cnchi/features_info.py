@@ -33,7 +33,7 @@
 # in desktop_info file instead of here.
 
 ICON_NAMES = {
-    'a11y': 'a11y'
+    'a11y': 'a11y',
     'aur': 'system-software-install',
     'bluetooth': 'bluetooth',
     'cups': 'printer',
