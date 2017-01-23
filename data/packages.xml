@@ -42,6 +42,7 @@
                 <pkgname>accountsservice</pkgname>
                 <pkgname>antergos-wallpapers</pkgname>
                 <pkgname>antergos-welcome</pkgname>
+                <pkgname>cdrtools</pkgname>
                 <pkgname>ffmpegthumbnailer</pkgname>
                 <pkgname>gst-libav</pkgname>
                 <pkgname>gst-plugins-bad</pkgname>
@@ -111,7 +112,6 @@
                 <pkgname>antergos-gnome-defaults-list</pkgname>
                 <pkgname>baobab</pkgname>  <!-- Disk usage -->
                 <pkgname>brasero</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>evince</pkgname>
                 <pkgname>eog</pkgname>
                 <pkgname>file-roller</pkgname>
@@ -162,7 +162,6 @@
                 <pkgname>antergos-gnome-defaults-list</pkgname>
                 <pkgname>baobab</pkgname>  <!-- Disk usage -->
                 <pkgname>brasero</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>cinnamon</pkgname>
                 <pkgname>cinnamon-control-center</pkgname>
                 <pkgname>cinnamon-desktop</pkgname>
@@ -207,7 +206,6 @@
 
         <edition name="XFCE" description="XFCE Desktop">
             <packages>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>evince</pkgname>
                 <pkgname>file-roller</pkgname>
                 <pkgname>gamin</pkgname>
@@ -245,7 +243,6 @@
                 <pkgname>caja</pkgname>
                 <pkgname>caja-gksu</pkgname>
                 <pkgname>caja-open-terminal</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>engrampa</pkgname>
                 <pkgname>eom</pkgname>
                 <pkgname>galculator-gtk2</pkgname>
@@ -281,7 +278,6 @@
                 <pkgname>arandr</pkgname>
                 <pkgname>conky</pkgname>
                 <pkgname>conky-manager</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>file-roller</pkgname>
                 <pkgname>galculator</pkgname>
                 <pkgname>gmrun</pkgname>
@@ -440,7 +436,6 @@
                 <pkgname>antergos-gnome-defaults-list</pkgname>
                 <pkgname>baobab</pkgname>  <!-- Disk usage -->
                 <pkgname>brasero</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>evince</pkgname>
                 <pkgname>eog</pkgname>
                 <pkgname>file-roller</pkgname>
@@ -489,7 +484,6 @@
         <edition name="i3" description="Tiling window manager">
             <packages>
                 <pkgname>arandr</pkgname>
-                <pkgname>cdrkit</pkgname>
                 <pkgname>dmenu</pkgname>
                 <pkgname>file-roller</pkgname>
                 <pkgname>galculator</pkgname>
