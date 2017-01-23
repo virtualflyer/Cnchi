@@ -1,3 +1,5 @@
+[2017-01-23 19:28:51 +0100]  Remove gstreamer0.10-plugins from list                                     karasu      {351552b8}
+[2017-01-21 20:48:38 +0100]  a11y                                                                       karasu      {9ab9ce61}
 [2017-01-20 10:00:14 +0100]  Working on it                                                              karasu      {d36d121c}
 [2017-01-20 09:48:02 +0100]  Fix tabs                                                                   karasu      {f6a192cf}
 [2017-01-20 09:44:35 +0100]  Adding a a11y feature (will be selected by default if a11y is active)      karasu      {6d8f07cc}
